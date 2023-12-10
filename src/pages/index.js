@@ -12,11 +12,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return(
-<div style={{ display: 'flex' }}>
+<div style={{ display: 'flex' , }}>
   <div style={{ flex: 1, width: '50%' }}>
     <Chatinterface/>
   </div>
-  <div style={{ flex: 1, width: '50%' }}>
+  <div style={{ flex: 1, width: '50%' , height : '100vh' , overflowY:'scroll'}}>
 <ChartView/> 
   </div>
 </div>
