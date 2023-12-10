@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     const url = 'https://api.openai.com/v1/chat/completions';
     const headers = {
       'Content-type': 'application/json',
-      Authorization: `Bearer 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`,
+      Authorization: `Bearer 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`,
     };
 
     const response = await axios.post(url, body, { headers: headers });

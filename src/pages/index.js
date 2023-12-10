@@ -7,6 +7,7 @@ import axios from 'axios';
 import TypingAnimation from "../components/TypingAnimation";
 import Chatinterface from "@/components/ChatApplication";
 import ChartView from "@/components/ChartView";
+import PowerloomInter from "@/components/powerloomcomp";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,10 +15,10 @@ export default function Home() {
   return(
 <div style={{ display: 'flex' , }}>
   <div style={{ flex: 1, width: '50%' }}>
-    <Chatinterface/>
+    <PowerloomInter/>
   </div>
   <div style={{ flex: 1, width: '50%' , height : '100vh' , overflowY:'scroll'}}>
-<ChartView/> 
+  <ChartView/> 
   </div>
 </div>
     

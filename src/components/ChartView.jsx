@@ -65,13 +65,13 @@ const ChartView = () => {
   return (
     <div style={{color:'wheat'}}>
       <h1>Transaction Gas Used Chart</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}  >
         <label>
           Enter Ethereum Address: &nbsp;
           <input type="text" value={address} onChange={handleAddressChange}  className='text-black p-3' />
         </label>
         <br/>
-        <button type="submit" className='bg-black p-3'>Fetch Transactions</button>
+        <button type="submit" className='bg-slate-700 p-3'>Fetch Transactions</button>
       </form>
       {showTable && (
         <div>
